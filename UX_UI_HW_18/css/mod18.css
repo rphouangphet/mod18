@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px; 
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links li a:hover {
+  color: #; /* Add HEX HOVER color here */
+}
+
+
+/* ^^^NAVIGATION */
+
+
+h1 {
+  font-family: helvetica, arial, sans-serif;
+ }
+ .separator {
+   width: 750px;
+ }
+ .left {
+   float: left;
+   padding-right: 15px;
+ }
+ .right {
+   float: right;
+   padding-left: 15px;
+ }
+ .img {
+  border-radius: 8px;
+} 
+
+/* ^^^BODY ABOUT ME */
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: left;
+  justify-items: left;
+  font-family: helvetica, arial, sans-serif;
+  color: white;
+  grid-template-areas:
+  "hover"
+  "disabled"
+  ;
+  height: 500px;
+}
+.hoverMe {
+  grid-area: hover;
+  background-color: red;
+  color: white;
+  width: 150px;
+  text-align: center;
+  height: 50px;
+  transition: 0.3s;
+
+}
+.hoverMe:hover {
+  background-color:blue;
+}
+
+
+/* ^^^RESUME BUTTON */
+
+/* CSS for My UX Skills Section */
+.mySkills {
+    margin-bottom: 50px;
+}
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    width: 30%; /* Adjust width as needed */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+/* CSS for My Work Section */
+.myWork {
+    margin-bottom: 50px;
+}
+
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust as needed */
+    gap: 20px;
+}
+
+.workItem {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.workItem img {
+    max-width: 100%;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+
+    .skill {
+        width: 100%;
+    }
+
+    .workGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+footer {
+  background-color: #373738;
+  padding: 20px; /* padding */
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+
+footer li {
+  padding: 0 10px; /* padding */
+  color: white; /* text color */
+}
